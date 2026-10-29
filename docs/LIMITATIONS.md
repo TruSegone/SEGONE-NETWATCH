@@ -1,0 +1,3 @@
+# Limitations
+
+This milestone is a runnable demo/API foundation. It does not yet meet the full version 1 definition of done. There is no SQLite persistence or Alembic schema, imported telemetry parser, standalone Windows collector, interface/capture capability check, live telemetry adapter, detection evaluation pipeline, alert audit trail, traffic direction measurement, retention control, rate limiting, request body middleware cap, or complete role/authentication system. Dashboard navigation exposes a polished overview shell; non-overview pages are not complete workflows yet. The available runtime is Python 3.15 rather than specifically 3.12, so dependency installation and tests must validate compatibility.

@@ -1,0 +1,16 @@
+[project]
+name = "segone-netwatch-api"
+version = "0.1.0"
+description = "Local-first network visibility API"
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.115,<0.120", "starlette>=0.40,<0.50", "uvicorn[standard]>=0.30,<1", "pydantic-settings>=2.6,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "httpx>=0.27,<1", "ruff>=0.8,<1"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+node_modules/
+dist/
+.env
+*.db
+*.sqlite*
+.local-python/
+.pydeps/
+.tmp/
+.netwatch-processes.json
+**/*.egg-info/
+*.tsbuildinfo
