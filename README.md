@@ -14,6 +14,10 @@ Set-ExecutionPolicy -Scope Process Bypass
 
 Open the frontend at http://127.0.0.1:5173 and API docs at http://127.0.0.1:8000/docs. The API binds to loopback. Stop both services with `& .\scripts\stop-dev.ps1`.
 
+## Reviewer website
+
+The public reviewer demo is built in static fixture mode and does not need the local API. GitHub Actions publishes it to https://trusegone.github.io/SEGONE-NETWATCH/ after the Pages workflow succeeds. It contains only fictional demo records and never connects to a monitored network. See [docs/REVIEWER_PREVIEW.md](docs/REVIEWER_PREVIEW.md).
+
 The setup script creates a Python virtual environment and installs dependencies. For collector ingestion, configure a random secret as `NETWATCH_INGEST_TOKEN` in the backend process environment. Ingestion remains disabled without it. Demo mode is selected by default (`NETWATCH_MODE=demo`). Setting another mode does not activate live monitoring; there is no collector or telemetry source in this release.
 
 ## Current capabilities
